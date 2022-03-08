@@ -1,8 +1,23 @@
+@font-face {
+  font-family: 'dalton';
+  src: URL('./assets/fonts/Dalton\ Maag\ -\ Objektiv\ Mk1.ttf')
+    format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'dalton';
+  src: URL('./assets/fonts/Dalton\ Maag\ -\ Objektiv\ Mk1\ Bold.ttf')
+    format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: dalton;
+  font-weight: normal;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
