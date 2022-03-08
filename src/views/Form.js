@@ -123,7 +123,6 @@ export default function Form() {
           onClick={onClick}
         />
       </div>
-      {/* <FormNav isLast={isLast} isFirst={isFirst} onClick={onClick} /> */}
     </div>
   )
 }
