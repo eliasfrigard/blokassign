@@ -1,23 +1,21 @@
 import React from 'react'
 
 export default function RangeSlider({ answer, onChange, min, max }) {
-  const labelStyle = {
-    position: 'absolute',
-    margin: '0 25px',
-    transform: 'translateY(-40px)',
-    left: `${answer}%`,
-    textAlign: 'center',
-  }
+  const rangePercentage = (answer * 100) / max
 
   return (
     <div className='RangeInput'>
-      {/* <label for='range' style={labelStyle}>
+      <label
+        for='range'
+        style={{ left: `${rangePercentage}%` }}
+        className='RangeLabel'
+      >
         {answer}
-      </label> */}
+      </label>
 
       <div
         className='RangeOverlay'
-        style={{ width: `${(answer * 100) / max}%` }}
+        style={{ width: `${rangePercentage}%` }}
       ></div>
       <input
         type='range'
