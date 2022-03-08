@@ -1,9 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 export default function RangeSlider({ answer, onChange, min, max }) {
-  const [rangePercentage, setRangePercentage] = useState((answer * 100) / max)
-
-  // const rangePercentage = (answer * 100) / max
+  const rangePercentage = (answer * 100) / max
 
   return (
     <div className='RangeInput'>
