@@ -1,15 +1,42 @@
 import React from 'react'
 
-import IconButton from '../components/IconButton'
+import IconButtons from '../components/IconButtons'
+
+// Images
+import lightning from '../assets/icons/lightning.svg'
+import heart from '../assets/icons/heart.svg'
+import star from '../assets/icons/star.svg'
 
 export default function Home() {
   return (
     <div className='Home'>
-      <p>INSTANT DIGITAL VALUATION</p>
-      <h2>What type of building are you valuating?</h2>
+      <div className='HomeText'>
+        <p>INSTANT DIGITAL VALUATION</p>
+        <h2>What type of building are you valuating?</h2>
+      </div>
 
-      <IconButton />
-      {/* Buttons */}
+      <IconButtons />
+
+      <div className='HomeInfo'>
+        <div className='HomeInfoRow'>
+          <img src={lightning} alt='' />
+          <p>
+            <b>2min</b> instant digital valuation
+          </p>
+        </div>
+        <div className='HomeInfoRow'>
+          <img src={heart} alt='' />
+          <p>
+            <b>364 168</b> valuations made since 2018
+          </p>
+        </div>
+        <div className='HomeInfoRow'>
+          <img src={star} alt='' />
+          <p>
+            <b>4,8</b> rating on Google (brokers agerave 3,2)
+          </p>
+        </div>
+      </div>
     </div>
   )
 }

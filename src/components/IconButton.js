@@ -1,12 +1,10 @@
 import React from 'react'
 
-import logo from '../assets/icons/apartment_house.svg'
-
-export default function IconButton() {
+export default function IconButton({ icon, text }) {
   return (
     <div className='IconButton'>
-      <img src={logo} alt='Blok Logo' />
-      <p>Apartment</p>
+      <img src={icon} alt={text} />
+      <p>{text}</p>
     </div>
   )
 }
