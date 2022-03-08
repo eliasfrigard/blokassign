@@ -1,5 +1,5 @@
 import './App.css'
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
 // Import views and components.
 import Header from './components/Header'

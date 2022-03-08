@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import IconButton from '../components/IconButton'
 import apartmentLogo from '../assets/icons/apartment_house.svg'
