@@ -1,0 +1,5 @@
+npm install
+npm start
+
+https://github.com/eliasfrigard/blokassign
+https://eliasfrigard.github.io/blokassign/
