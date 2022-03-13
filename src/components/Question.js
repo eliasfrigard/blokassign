@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { motion } from 'framer-motion'
 
 import RangeInput from './RangeInput'
 import TextInput from './TextInput'
@@ -12,7 +13,7 @@ export default function Question({
   onChange,
 }) {
   return (
-    <div className='Question'>
+    <motion.div initial={{ x: -350 }} animate={{ x: 0 }} className='Question'>
       <h2>{question}</h2>
       <img src={icon} alt='' />
 
@@ -23,6 +24,6 @@ export default function Question({
         onChange={onChange}
       />
       <TextInput answer={answer} onChange={onChange} />
-    </div>
+    </motion.div>
   )
 }

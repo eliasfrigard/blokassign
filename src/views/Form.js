@@ -8,14 +8,14 @@ export default function Form() {
   /* Hardcoded Mock Questions */
   const [questions, setQuestions] = useState([
     {
-      id: 1,
+      id: 0,
       icon: './images/size.svg',
       question: 'How big is the apartment?',
       minValue: 1,
       maxValue: 200,
     },
     {
-      id: 2,
+      id: 1,
       icon: './images/rooms.svg',
       question: 'How many rooms does it have?',
       minValue: 1,
@@ -100,15 +100,29 @@ export default function Form() {
   return (
     <div className='Form'>
       <ProgressBar progress={progress} />
-      <Question
+
+      {questions
+        .filter((q) => q.id === currentQuestionIndex)
+        .map((q) => (
+          <Question
+            key={q.id}
+            question={q.question}
+            icon={q.icon}
+            minValue={q.minValue}
+            maxValue={q.maxValue}
+            answer={answer}
+            onChange={onChange}
+          />
+        ))}
+
+      {/*       <Question
         question={questions[currentQuestionIndex].question}
         icon={questions[currentQuestionIndex].icon}
         minValue={questions[currentQuestionIndex].minValue}
         maxValue={questions[currentQuestionIndex].maxValue}
         answer={answer}
         onChange={onChange}
-      />
-
+      /> */}
       <div className='FormNav'>
         <Button
           text='prev'
