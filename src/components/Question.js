@@ -1,13 +1,22 @@
-import React, { useState } from 'react'
+import React from 'react'
+
+// Using framer motion for animation.
 import { motion } from 'framer-motion'
 
+// Components
 import RangeInput from './RangeInput'
 import TextInput from './TextInput'
 
+/**
+ * This component represents a single question.
+ * It includes input fields for answering this question.
+ * @param {} param0
+ * @returns
+ */
 export default function Question({
-  question,
-  answer,
   icon,
+  question,
+  inputValue,
   minValue,
   maxValue,
   onChange,
@@ -18,12 +27,13 @@ export default function Question({
       <img src={icon} alt='' />
 
       <RangeInput
-        answer={answer}
+        value={inputValue}
         min={minValue}
         max={maxValue}
         onChange={onChange}
       />
-      <TextInput answer={answer} onChange={onChange} />
+
+      <TextInput value={inputValue} onChange={onChange} />
     </motion.div>
   )
 }

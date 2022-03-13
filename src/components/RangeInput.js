@@ -1,7 +1,8 @@
 import React from 'react'
 
-export default function RangeSlider({ answer, onChange, min, max }) {
-  const rangePercentage = Number(((answer - min) * 100) / (max - min))
+export default function RangeSlider({ value, onChange, min, max }) {
+  // Value as percentage for overlay width and output offset.
+  const rangePercentage = Number(((value - min) * 100) / (max - min))
 
   return (
     <div className='RangeInput'>
@@ -13,7 +14,7 @@ export default function RangeSlider({ answer, onChange, min, max }) {
           left: `calc(${rangePercentage}% + (${13 - rangePercentage * 0.5}px))`,
         }}
       >
-        {answer}
+        {value}
       </output>
 
       {/* Range input. */}
@@ -21,7 +22,7 @@ export default function RangeSlider({ answer, onChange, min, max }) {
         type='range'
         min={min}
         max={max}
-        value={answer}
+        value={value}
         className='RangeSlider'
         onChange={onChange}
       />

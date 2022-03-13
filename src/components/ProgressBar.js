@@ -1,5 +1,8 @@
 import React from 'react'
 
+/**
+ * This is a progress bar with a fractional overlay.
+ */
 export default function ProgressBar({ progress }) {
   const overlayStyle = {
     width: `${progress}%`,

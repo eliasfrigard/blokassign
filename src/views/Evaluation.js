@@ -1,13 +1,16 @@
 import React, { useState } from 'react'
 
+// Components
 import ProgressBar from '../components/ProgressBar'
 import Button from '../components/Button'
 import Question from '../components/Question'
-
 import backArrow from '../assets/icons/back_arrow.svg'
 
-export default function Form() {
-  /* Hardcoded Mock Questions */
+export default function Evaluation() {
+  /*
+   * Hardcoded Mock Questions
+   * Could for example be fetched from server.
+   */
   const [questions] = useState([
     {
       id: 0,
@@ -27,14 +30,12 @@ export default function Form() {
 
   // State variable for the current question.
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
-
+  // Answer variable for shared state across components.
+  const [answer, setAnswer] = useState(1)
   // HashMap containing all answers.
   const [answers, setAnswers] = useState(
     new Map(questions.map((q) => [q.id, q.minValue]))
   )
-
-  // Answer variable for shared state across components.
-  const [answer, setAnswer] = useState(1)
 
   // Variables for checking if there are next or previous questions.
   const isFirst = currentQuestionIndex === 0
@@ -56,7 +57,9 @@ export default function Form() {
     }
   }
 
-  // Handle change of answer input.
+  /*
+   * Handle change of answer input.
+   */
   const onChange = (event) => {
     const newValue = parseInt(event.target.value)
 
@@ -71,7 +74,7 @@ export default function Form() {
     setAnswer(event.target.value)
   }
 
-  /**
+  /*
    * Saves a new answer to the collection by its ID.
    */
   const saveAnswers = (id, newAnswer) => {
@@ -85,24 +88,25 @@ export default function Form() {
     setAnswers(answersCopy)
   }
 
-  /**
-   * Changes the question view and returns the previous answer.
+  /*
+   * Changes the question that is displayed.
    */
   const changeQuestion = (nextIndex) => {
     // Return if out of bounds.
     if (nextIndex < 0 || nextIndex > questions.length) return
 
-    // Set answer state to its previous state for that question.
+    // Set answer state to the state of the next question.
     setAnswer(answers.get(questions[nextIndex].id))
 
-    // Change question view.
+    // Change current question index.
     setCurrentQuestionIndex(nextIndex)
   }
 
   return (
-    <div className='Form'>
+    <div className='Evaluation'>
       <ProgressBar progress={progress} />
 
+      {/* Filter and map the questions array to render a single question at a time. */}
       {questions
         .filter((question) => question.id === currentQuestionIndex)
         .map((question) => (
@@ -112,12 +116,13 @@ export default function Form() {
             icon={question.icon}
             minValue={question.minValue}
             maxValue={question.maxValue}
-            answer={answer}
+            inputValue={answer}
             onChange={onChange}
           />
         ))}
 
-      <div className='FormNav'>
+      {/* Navigation for the evaluation form. */}
+      <div className='EvaluationNav'>
         <Button
           icon={backArrow}
           text='prev'

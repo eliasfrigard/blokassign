@@ -1,4 +1,6 @@
 import React from 'react'
+
+// Components
 import IconButtons from '../components/IconButtons'
 import InfoSnippets from '../components/InfoSnippets'
 

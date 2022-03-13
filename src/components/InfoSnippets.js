@@ -4,6 +4,9 @@ import lightning from '../assets/icons/lightning.svg'
 import heart from '../assets/icons/heart.svg'
 import star from '../assets/icons/star.svg'
 
+/**
+ * This component contains a list of info snippets with icons and text.
+ */
 export default function InfoSnippets() {
   return (
     <div className='InfoSnippets'>

@@ -1,5 +1,9 @@
 import React from 'react'
 
+/**
+ * This represents a general button that emits an event on click and ca be disabled.
+ * The button can have either text or an icon.
+ */
 export default function Button({
   text,
   icon,

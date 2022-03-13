@@ -1,4 +1,4 @@
-.Form {
+.Evaluation {
   padding: 0 20px 25px 20px;
   height: calc(100vh - 90px - 90px);
 }
@@ -109,7 +109,7 @@
   font-size: 14px;
 }
 
-.FormNav {
+.EvaluationNav {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -123,7 +123,7 @@
   gap: 90px;
 }
 
-.FormNav button {
+.EvaluationNav button {
   height: 50px;
   width: 100%;
   font-size: 17px;
@@ -146,5 +146,24 @@
   .Question {
     justify-content: center;
     gap: 50px;
+  }
+}
+
+@media screen and (max-height: 550px) {
+  .Question img {
+    display: none;
+  }
+
+  .Evaluation,
+  .Question {
+    height: 100%;
+  }
+
+  .Question h2 {
+    font-size: 16px;
+  }
+
+  .EvaluationNav {
+    display: none;
   }
 }
