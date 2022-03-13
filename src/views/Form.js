@@ -118,14 +118,14 @@ export default function Form() {
       <div className='FormNav'>
         <Button
           text='prev'
-          opacity={isFirst ? 0.5 : 1}
+          disabled={isFirst}
           backgroundColor='white'
           onClick={onClick}
         />
         <Button
           text='next'
           backgroundColor='#8dd3d9'
-          opacity={isLast ? 0.5 : 1}
+          disabled={isLast}
           onClick={onClick}
         />
       </div>

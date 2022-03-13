@@ -68,6 +68,7 @@ a {
 
 .ReactLink {
   flex: 1;
+  min-width: 40%;
 }
 
 .IconButton {
