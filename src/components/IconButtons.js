@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 import IconButton from '../components/IconButton'
 import apartmentLogo from '../assets/icons/apartment_house.svg'
@@ -10,12 +9,10 @@ import detachedLoto from '../assets/icons/detached_house.svg'
 export default function IconButtons() {
   return (
     <div className='IconButtons'>
-      <Link className='ReactLink' to='/form'>
-        <IconButton icon={apartmentLogo} text='Apartment' />
-      </Link>
-      <IconButton icon={terracedLogo} text='Terraced' />
-      <IconButton icon={semiLogo} text='Semi-Detached' />
-      <IconButton icon={detachedLoto} text='Detached' />
+      <IconButton icon={apartmentLogo} to='/form' text='Apartment' />
+      <IconButton icon={terracedLogo} to='/form' text='Terraced' />
+      <IconButton icon={semiLogo} to='/form' text='Semi-Detached' />
+      <IconButton icon={detachedLoto} to='/form' text='Detached' />
     </div>
   )
 }

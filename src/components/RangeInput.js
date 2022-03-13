@@ -1,18 +1,20 @@
 import React from 'react'
 
 export default function RangeSlider({ answer, onChange, min, max }) {
-  const rangePercentage = (answer * 100) / max
+  const rangePercentage = Number(((answer - min) * 100) / (max - min))
 
   return (
     <div className='RangeInput'>
       {/* Input label. */}
-      <label
+      <output
         for='range'
-        style={{ left: `${rangePercentage}%` }}
         className='RangeLabel'
+        style={{
+          left: `calc(${rangePercentage}% + (${13 - rangePercentage * 0.5}px))`,
+        }}
       >
         {answer}
-      </label>
+      </output>
 
       {/* Range input. */}
       <input

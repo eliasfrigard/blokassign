@@ -6,7 +6,7 @@ import Question from '../components/Question'
 
 export default function Form() {
   /* Hardcoded Mock Questions */
-  const [questions, setQuestions] = useState([
+  const [questions] = useState([
     {
       id: 0,
       icon: './images/size.svg',
@@ -26,13 +26,13 @@ export default function Form() {
   // State variable for the current question.
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
 
-  // Answer variable for shared state across components.
-  const [answer, setAnswer] = useState(1)
-
-  // HashMap containing all answers with question IDs.
+  // HashMap containing all answers.
   const [answers, setAnswers] = useState(
     new Map(questions.map((q) => [q.id, q.minValue]))
   )
+
+  // Answer variable for shared state across components.
+  const [answer, setAnswer] = useState(1)
 
   // Variables for checking if there are next or previous questions.
   const isFirst = currentQuestionIndex === 0
@@ -45,7 +45,7 @@ export default function Form() {
   // Changes the current question when using navigation.
   const onClick = (event) => {
     // Save the current question answer before changing view.
-    saveAnswers(currentQuestionIndex + 1, answer)
+    saveAnswers(currentQuestionIndex, answer)
 
     if (event.target.value === 'prev') {
       changeQuestion(currentQuestionIndex - 1)
@@ -102,27 +102,19 @@ export default function Form() {
       <ProgressBar progress={progress} />
 
       {questions
-        .filter((q) => q.id === currentQuestionIndex)
-        .map((q) => (
+        .filter((question) => question.id === currentQuestionIndex)
+        .map((question) => (
           <Question
-            key={q.id}
-            question={q.question}
-            icon={q.icon}
-            minValue={q.minValue}
-            maxValue={q.maxValue}
+            key={question.id}
+            question={question.question}
+            icon={question.icon}
+            minValue={question.minValue}
+            maxValue={question.maxValue}
             answer={answer}
             onChange={onChange}
           />
         ))}
 
-      {/*       <Question
-        question={questions[currentQuestionIndex].question}
-        icon={questions[currentQuestionIndex].icon}
-        minValue={questions[currentQuestionIndex].minValue}
-        maxValue={questions[currentQuestionIndex].maxValue}
-        answer={answer}
-        onChange={onChange}
-      /> */}
       <div className='FormNav'>
         <Button
           text='prev'

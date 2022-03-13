@@ -6,6 +6,7 @@ export default function Button({ text, backgroundColor, opacity, onClick }) {
       value={text}
       style={{ backgroundColor: backgroundColor, opacity: opacity }}
       onClick={onClick}
+      className='HooverElement'
     >
       {text}
     </button>

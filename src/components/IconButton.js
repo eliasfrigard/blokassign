@@ -1,12 +1,15 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-export default function IconButton({ icon, text }) {
+export default function IconButton({ icon, text, to }) {
   return (
-    <div className='IconButton'>
-      <div className='IconButtonImgWrapper'>
-        <img src={icon} alt={text} />
+    <Link className='ReactLink' to={to}>
+      <div className='IconButton HooverElement'>
+        <div className='IconButtonImgWrapper'>
+          <img src={icon} alt={text} />
+        </div>
+        <p>{text}</p>
       </div>
-      <p>{text}</p>
-    </div>
+    </Link>
   )
 }
