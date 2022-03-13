@@ -126,6 +126,7 @@
 .EvaluationNav button {
   height: 50px;
   width: 100%;
+  max-width: 500px;
   font-size: 17px;
   font-weight: bold;
   text-transform: uppercase;
@@ -146,6 +147,16 @@
   .Question {
     justify-content: center;
     gap: 50px;
+  }
+
+  .App {
+    height: 100vh;
+  }
+
+  .EvaluationNav {
+    background-color: transparent;
+    gap: 60px;
+    height: 120px;
   }
 }
 
