@@ -1,0 +1,19 @@
+.Header {
+  width: 100%;
+  height: 80px;
+  padding: 20px;
+}
+
+.Header img {
+  height: 40px;
+}
+
+@media screen and (min-width: 900px) {
+  .Header {
+    height: 90px;
+  }
+
+  .Header img {
+    height: 50px;
+  }
+}

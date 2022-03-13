@@ -1,0 +1,128 @@
+.Home {
+  padding: 25px 20px 50px 20px;
+  display: flex;
+  height: calc(100vh - 90px);
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.ReactLink {
+  flex: 1;
+  min-width: 40%;
+}
+
+.IconButtons {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.IconButton {
+  flex: 1;
+  min-width: 40%;
+  height: 85px;
+  border-radius: 10px;
+  background-color: #8dd3d9;
+  padding: 7px 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.IconButtonImgWrapper {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.IconButton img {
+  max-height: 35px;
+  max-width: 55px;
+}
+
+.IconButton p {
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #002641;
+}
+
+.InfoSnippets {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+}
+
+.InfoSnippets div {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.InfoSnippets div img {
+  height: 30px;
+  margin-right: 15px;
+}
+
+.InfoSnippetText {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 900px) {
+  .HomeText {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .ReactLink {
+    min-width: 40%;
+    height: 150px;
+  }
+
+  .ReactLink {
+    min-width: 40%;
+    height: 150px;
+  }
+
+  .IconButtons {
+    width: 100%;
+    height: fit-content;
+    gap: 20px;
+  }
+
+  .IconButton {
+    height: 150px;
+    width: 100%;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+
+  .IconButton img {
+    max-height: 50px;
+    max-width: 100px;
+  }
+
+  .IconButton p {
+    font-size: 18px;
+  }
+
+  .InfoSnippets div {
+    padding: 13px 0;
+  }
+
+  .InfoSnippets div img {
+    height: 35px;
+    margin-right: 20px;
+  }
+}

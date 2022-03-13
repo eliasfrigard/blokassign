@@ -1,12 +1,11 @@
-import './App.css'
+import './styles/App.css'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
-import Div100vh from 'react-div-100vh'
 
 // Import views and components.
 import Header from './components/Header'
 import Home from './views/Home'
-import Form from './views/Form'
+import Form from './views/Evaluation'
 
 function App() {
   const location = useLocation()
