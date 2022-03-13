@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Button({
   text,
+  icon,
   backgroundColor,
-  opacity,
   onClick,
   disabled,
 }) {
@@ -15,7 +15,12 @@ export default function Button({
       className='HooverElement'
       disabled={disabled}
     >
-      {text}
+      {/* Render icon or text depending on what is available. */}
+      {icon ? (
+        <img src={icon} alt='Button Icon' className='ButtonImage' />
+      ) : (
+        text
+      )}
     </button>
   )
 }

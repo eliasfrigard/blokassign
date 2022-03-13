@@ -4,6 +4,8 @@ import ProgressBar from '../components/ProgressBar'
 import Button from '../components/Button'
 import Question from '../components/Question'
 
+import backArrow from '../assets/icons/back_arrow.svg'
+
 export default function Form() {
   /* Hardcoded Mock Questions */
   const [questions] = useState([
@@ -117,6 +119,7 @@ export default function Form() {
 
       <div className='FormNav'>
         <Button
+          icon={backArrow}
           text='prev'
           disabled={isFirst}
           backgroundColor='white'

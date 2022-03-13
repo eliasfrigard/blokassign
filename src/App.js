@@ -14,6 +14,7 @@ function App() {
     <div className='App'>
       <Header />
 
+      {/* Routed components with fade-transitions. */}
       <TransitionGroup>
         <CSSTransition timeout={500} classNames='fade' key={location.key}>
           <Routes className='Routes'>
