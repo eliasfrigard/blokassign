@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.d58a00af.css",
-    "main.js": "./static/js/main.31a0071a.js",
+    "main.css": "./static/css/main.0c9e27c7.css",
+    "main.js": "./static/js/main.10ca65cc.js",
     "static/media/Dalton Maag - Objektiv Mk1 Bold.ttf": "./static/media/Dalton Maag - Objektiv Mk1 Bold.0dfcab4de6ead7c092fc.ttf",
     "static/media/Dalton Maag - Objektiv Mk1.ttf": "./static/media/Dalton Maag - Objektiv Mk1.a3f802fa16063e5d295a.ttf",
     "static/media/background.jpg": "./static/media/background.14a2377776e123e1b9b8.jpg",
@@ -13,12 +13,13 @@
     "static/media/star.svg": "./static/media/star.751459f3d9b3cb92a164e376bbd944a2.svg",
     "static/media/lightning.svg": "./static/media/lightning.67b2f0bd1bbcc88d0a59eebe53135853.svg",
     "static/media/heart.svg": "./static/media/heart.f220496915c8c6cb471184d93bf58c7e.svg",
+    "static/media/back_arrow.svg": "./static/media/back_arrow.4bb56dd983cf8c692169bf267c796374.svg",
     "index.html": "./index.html",
-    "main.d58a00af.css.map": "./static/css/main.d58a00af.css.map",
-    "main.31a0071a.js.map": "./static/js/main.31a0071a.js.map"
+    "main.0c9e27c7.css.map": "./static/css/main.0c9e27c7.css.map",
+    "main.10ca65cc.js.map": "./static/js/main.10ca65cc.js.map"
   },
   "entrypoints": [
-    "static/css/main.d58a00af.css",
-    "static/js/main.31a0071a.js"
+    "static/css/main.0c9e27c7.css",
+    "static/js/main.10ca65cc.js"
   ]
 }
