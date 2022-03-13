@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/blokassign/static/css/main.ef2e0b3e.css",
-    "main.js": "/blokassign/static/js/main.115a2357.js",
-    "static/media/Dalton Maag - Objektiv Mk1 Bold.ttf": "/blokassign/static/media/Dalton Maag - Objektiv Mk1 Bold.0dfcab4de6ead7c092fc.ttf",
-    "static/media/Dalton Maag - Objektiv Mk1.ttf": "/blokassign/static/media/Dalton Maag - Objektiv Mk1.a3f802fa16063e5d295a.ttf",
-    "static/media/background.jpg": "/blokassign/static/media/background.14a2377776e123e1b9b8.jpg",
-    "static/media/logo.svg": "/blokassign/static/media/logo.342616f7ec6b531726bc70db507e4ffa.svg",
-    "static/media/apartment_house.svg": "/blokassign/static/media/apartment_house.76eb6abc145138a887ee9f22600166fb.svg",
-    "static/media/semidetached_house.svg": "/blokassign/static/media/semidetached_house.34668adb0c19ba9878066d399b7c2688.svg",
-    "static/media/terraced_house.svg": "/blokassign/static/media/terraced_house.124aea9ca8aafc9976fcb42d4d9c0ddf.svg",
-    "static/media/detached_house.svg": "/blokassign/static/media/detached_house.248eba27bca539b5d5e4281376831f11.svg",
-    "static/media/star.svg": "/blokassign/static/media/star.751459f3d9b3cb92a164e376bbd944a2.svg",
-    "static/media/lightning.svg": "/blokassign/static/media/lightning.67b2f0bd1bbcc88d0a59eebe53135853.svg",
-    "static/media/heart.svg": "/blokassign/static/media/heart.f220496915c8c6cb471184d93bf58c7e.svg",
-    "index.html": "/blokassign/index.html",
-    "static/media/back_arrow.svg": "/blokassign/static/media/back_arrow.4bb56dd983cf8c692169bf267c796374.svg",
-    "main.ef2e0b3e.css.map": "/blokassign/static/css/main.ef2e0b3e.css.map",
-    "main.115a2357.js.map": "/blokassign/static/js/main.115a2357.js.map"
+    "main.css": "/static/css/main.1c061b81.css",
+    "main.js": "/static/js/main.e42ef0bc.js",
+    "static/media/Dalton Maag - Objektiv Mk1 Bold.ttf": "/static/media/Dalton Maag - Objektiv Mk1 Bold.0dfcab4de6ead7c092fc.ttf",
+    "static/media/Dalton Maag - Objektiv Mk1.ttf": "/static/media/Dalton Maag - Objektiv Mk1.a3f802fa16063e5d295a.ttf",
+    "static/media/background.jpg": "/static/media/background.14a2377776e123e1b9b8.jpg",
+    "static/media/logo.svg": "/static/media/logo.342616f7ec6b531726bc70db507e4ffa.svg",
+    "static/media/apartment_house.svg": "/static/media/apartment_house.76eb6abc145138a887ee9f22600166fb.svg",
+    "static/media/semidetached_house.svg": "/static/media/semidetached_house.34668adb0c19ba9878066d399b7c2688.svg",
+    "static/media/terraced_house.svg": "/static/media/terraced_house.124aea9ca8aafc9976fcb42d4d9c0ddf.svg",
+    "static/media/detached_house.svg": "/static/media/detached_house.248eba27bca539b5d5e4281376831f11.svg",
+    "static/media/star.svg": "/static/media/star.751459f3d9b3cb92a164e376bbd944a2.svg",
+    "static/media/lightning.svg": "/static/media/lightning.67b2f0bd1bbcc88d0a59eebe53135853.svg",
+    "static/media/heart.svg": "/static/media/heart.f220496915c8c6cb471184d93bf58c7e.svg",
+    "static/media/back_arrow.svg": "/static/media/back_arrow.4bb56dd983cf8c692169bf267c796374.svg",
+    "index.html": "/index.html",
+    "main.1c061b81.css.map": "/static/css/main.1c061b81.css.map",
+    "main.e42ef0bc.js.map": "/static/js/main.e42ef0bc.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef2e0b3e.css",
-    "static/js/main.115a2357.js"
+    "static/css/main.1c061b81.css",
+    "static/js/main.e42ef0bc.js"
   ]
 }
