@@ -1,6 +1,6 @@
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
-import { use100vh } from 'react-div-100vh'
+import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
 // Import views and components.
 import Header from './components/Header'
@@ -12,10 +12,14 @@ function App() {
     <div className='App'>
       <Header />
 
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/form' element={<Form />} />
-      </Routes>
+      <TransitionGroup>
+        <CSSTransition timeout={250} classNames='fade'>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/form' element={<Form />} />
+          </Routes>
+        </CSSTransition>
+      </TransitionGroup>
     </div>
   )
 }

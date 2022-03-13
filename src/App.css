@@ -65,7 +65,8 @@ a {
   gap: 10px;
 }
 
-.IconButton {
+.IconButton,
+.ReactLink {
   flex: 1;
   min-width: 40%;
   height: 85px;
@@ -114,6 +115,16 @@ a {
 .InfoSnippets div img {
   height: 30px;
   margin-right: 15px;
+}
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter .fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
 }
 
 /* Form CSS below */

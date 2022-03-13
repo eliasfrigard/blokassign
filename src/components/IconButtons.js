@@ -10,7 +10,9 @@ import detachedLoto from '../assets/icons/detached_house.svg'
 export default function IconButtons() {
   return (
     <div className='IconButtons'>
-      <IconButton icon={apartmentLogo} text='Apartment' />
+      <Link className='ReactLink' to='/form'>
+        <IconButton icon={apartmentLogo} text='Apartment' />
+      </Link>
       <IconButton icon={terracedLogo} text='Terraced' />
       <IconButton icon={semiLogo} text='Semi-Detached' />
       <IconButton icon={detachedLoto} text='Detached' />
