@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/blokassign/static/css/main.ef2e0b3e.css",
-    "main.js": "/blokassign/static/js/main.44de554d.js",
+    "main.js": "/blokassign/static/js/main.085f9bc9.js",
     "static/media/Dalton Maag - Objektiv Mk1 Bold.ttf": "/blokassign/static/media/Dalton Maag - Objektiv Mk1 Bold.0dfcab4de6ead7c092fc.ttf",
     "static/media/Dalton Maag - Objektiv Mk1.ttf": "/blokassign/static/media/Dalton Maag - Objektiv Mk1.a3f802fa16063e5d295a.ttf",
     "static/media/background.jpg": "/blokassign/static/media/background.14a2377776e123e1b9b8.jpg",
@@ -16,10 +16,10 @@
     "index.html": "/blokassign/index.html",
     "static/media/back_arrow.svg": "/blokassign/static/media/back_arrow.4bb56dd983cf8c692169bf267c796374.svg",
     "main.ef2e0b3e.css.map": "/blokassign/static/css/main.ef2e0b3e.css.map",
-    "main.44de554d.js.map": "/blokassign/static/js/main.44de554d.js.map"
+    "main.085f9bc9.js.map": "/blokassign/static/js/main.085f9bc9.js.map"
   },
   "entrypoints": [
     "static/css/main.ef2e0b3e.css",
-    "static/js/main.44de554d.js"
+    "static/js/main.085f9bc9.js"
   ]
 }
