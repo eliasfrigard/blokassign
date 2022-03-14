@@ -12,10 +12,26 @@ import detachedLoto from '../assets/icons/detached_house.svg'
 export default function IconButtons() {
   return (
     <div className='IconButtons'>
-      <IconButton icon={apartmentLogo} to='/evaluation' text='Apartment' />
-      <IconButton icon={terracedLogo} to='/evaluation' text='Terraced' />
-      <IconButton icon={semiLogo} to='/evaluation' text='Semi-Detached' />
-      <IconButton icon={detachedLoto} to='/evaluation' text='Detached' />
+      <IconButton
+        icon={apartmentLogo}
+        to='/blokassign/evaluation'
+        text='Apartment'
+      />
+      <IconButton
+        icon={terracedLogo}
+        to='/blokassign/evaluation'
+        text='Terraced'
+      />
+      <IconButton
+        icon={semiLogo}
+        to='/blokassign/evaluation'
+        text='Semi-Detached'
+      />
+      <IconButton
+        icon={detachedLoto}
+        to='/blokassign/evaluation'
+        text='Detached'
+      />
     </div>
   )
 }

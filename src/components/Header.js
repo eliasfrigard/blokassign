@@ -9,7 +9,7 @@ import BlokLogo from '../assets/logo.svg'
 export default function Header() {
   return (
     <div className='Header'>
-      <Link to='/'>
+      <Link to='/blokassign'>
         <img src={BlokLogo} alt='Blok Logo' />
       </Link>
     </div>
